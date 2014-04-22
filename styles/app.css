@@ -1,0 +1,124 @@
+#vimeoitems h1 {
+    font-family: "League Gothic";
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: left;
+}
+
+#vimeoitems p {
+    font-family: helvetica, arial;
+    color: #000000;
+
+}
+
+#vimeoitems ul{
+
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+#vimeoitems ul li{
+
+    margin-bottom:15px;
+    padding:5px 10px;
+    box-sizing:border-box;
+    border-radius: 5px;
+    position:relative;
+}
+#vimeoitems ul li:last-of-type{
+    margin-bottom:0;
+}
+#vimeoitems ul li h1{
+    margin-bottom: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: "League Gothic";
+    font-size: 18px;
+}
+
+#vimeoitems p {
+    text-align: left;
+}
+
+
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-thumbnails {
+    width: 100%;
+}
+
+.icons li   {
+    display: inline-block;
+}
+
+
+
+#likes:before {
+    content: url("images/likes.png");
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    top: 5px;
+    position: relative;
+
+}
+
+#plays:before {
+    content: url("images/plays.png");
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    top: 5px;
+    position: relative;
+
+}
+
+#comments:before {
+    content: url("images/comments.png");
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    top: 5px;
+    position: relative;
+
+}
+
+@media (max-width:480px) {
+
+    #vimeoitems ul li h1{
+        font-size: 18px;
+    }
+
+}
+@media (min-width:480px)and (max-width:776px) {
+
+    #vimeoitems ul li h1{
+        font-size: 24px;
+    }
+}
+
+@media (min-width:778px) {
+
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+}
